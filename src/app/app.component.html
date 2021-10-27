@@ -8,9 +8,8 @@
   </div>
   <div class="stickCreatePanel sticker">
     <div class="container" style="flex-direction: column; height: 100%;">
-      <textarea type="text" id="title" class="" placeholder="Введите заголовок" [(ngModel)]="title"></textarea>
+      <textarea type="text" id="title" class="" placeholder="Введите заголовок"[(ngModel)]="title"></textarea>
       <textarea type="text" class="textarea" placeholder="Введите текст" [(ngModel)]="text"></textarea>
-      <button class="addBut" #addBut (click)="addNote(title,text)">Добавить</button>
-    </div>
+      <button class="addBut" #addBut (click)="addNote(title,text)">Добавить</button></div>
   </div>
 </div>
