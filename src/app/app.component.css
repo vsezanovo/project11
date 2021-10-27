@@ -42,7 +42,6 @@ h2{
     resize: none;
     background-color: rgb(170, 158, 177);
     border: none;
-    font-family: 'Caveat', cursive;
     font-size: 1.5em;
     height: 1em;
     overflow: hidden;
@@ -54,7 +53,6 @@ h2{
     flex-grow: 1;
     background-color: rgb(170, 158, 177);
     border: none;
-    font-family: 'Caveat', cursive;
     outline: none;
 }
 .stickCreatePanel{
