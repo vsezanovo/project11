@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="sticker" *ngFor="let sticker of stickers">
+    <h2>{{sticker.title}}</h2>
+    <p>{{sticker.text}}</p>
+    <div class="dateText">{{sticker.date|date:'d.MM.yy HH:mm'}}</div>
+    <div class="id">{{sticker.id}}</div>
+    <div class="deleteBut" (click)="deleteSticker(sticker.id)"></div>
+  </div>
+  <div class="stickCreatePanel sticker">
+    <div class="container" style="flex-direction: column; height: 100%;">
+      <textarea type="text" id="title" class="" placeholder="Введите заголовок" [(ngModel)]="title"></textarea>
+      <textarea type="text" class="textarea" placeholder="Введите текст" [(ngModel)]="text"></textarea>
+      <button class="addBut" #addBut (click)="addNote(title,text)">Добавить</button>
+    </div>
+  </div>
+</div>
